@@ -1,3 +1,24 @@
+:root
+{
+   --body-color:#757575;
+   --span-logo: #2196F3;
+   --h-color:#000000;
+   --titles-color:#212121;
+   --title-hero:#FFFFFF;
+   --logo-footer:#ffffff;
+   --map-color:#ffffff;
+
+   --background-button: #F5F4FA;
+   --background-focus-button: #2196F3;
+   --background-hero:#2F303A;
+   --background-hero-focus:#188CE8;
+   --background-teammates:#F5F4FA;
+   --background-teammates-item:#FFFFFF;
+   --background-titles-item:#FFFFFF;
+   --background-footer:#2F303A;
+}
+
+
 .hidden
 {
     visibility: hidden;
@@ -8,23 +29,16 @@ ul
    list-style: none;
 }
 
-
-/*___________________________________________body*/
-
-body 
-{
-    font-family: 'Roboto', sans-serif;  
-    color:#757575;
-    
-}
-
 a
 {
    text-decoration: none;
    color: inherit;
 }
 
-/* ___________________________________________Head */
+/* ___________________________________________Header */
+
+
+
  .logo
  {
     color: #000000;
@@ -40,26 +54,265 @@ a
 
  .span-logo
  {
-    color: #2196F3;
+    color: var(--span-logo);
  }
 
  .nav-menu
  {
-    color: #212121;
+    color: var(--h-color);
     
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
  }
+
 
  .nav-item:hover,
  .nav-item:focus,
  .contacts:hover,
  .contacts:focus
  {
-   color: #2196F3;
+   color: var(--background-focus-button);
  } 
  
+ .nav-menu .nav-item.current
+ {
+   color: var(--background-focus-button);
+ }
  
+
+
+
+
+ /*___________________________________________body*/
+
+body 
+{
+    font-family: 'Roboto', sans-serif;  
+    color:var(--body-color);
+    
+}
+
+.hero
+{
+   background: var(--background-hero);
+}
+
+.hero-title
+{
+   
+   font-weight: 900;
+   font-size: 44px;
+   line-height: 1.36;
+   
+   letter-spacing: 0.06em;
+   text-transform: uppercase;
+   
+   color: var(--title-hero);
+}
+
+.hero-button
+{
+   
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.88;
+   /* identical to box height, or 188% */
+
+   display: flex;
+   align-items: center;
+   text-align: center;
+   letter-spacing: 0.06em;
+
+   color: var(--title-hero);
+   background: var(--background-focus-button);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+
+}
+.hero-button:focus ,
+.hero-button:hover
+{
+   background: var(--background-hero-focus);
+}
+
+.properties-title
+{
+   
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+
+   color: var(--titles-color);
+}
+
+.properties-description
+{
+  
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.71;
+   
+   letter-spacing: 0.03em;
+   
+}
+
+.button
+{
+   cursor:pointer;
+
+   font-family: inherit;
+
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.63;
+
+   background: var(--background-button);
+   border-radius: 4px;
+}
+
+.big-headers
+{
+   
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.17;
+   text-align: center;
+   letter-spacing: 0.03em;
+
+color: var(--titles-color);
+}
+
+.teammates
+{
+   background: var(--background-teammates);
+}
+
+.teammates-item
+{
+   background: var(--background-teammates-item);
+}
+
+.teammates-name
+{
+   
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.19;
+   
+   letter-spacing: 0.03em;
+
+   color: var(--titles-color);
+}
+
+.teammates-position
+{
+   
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.19;
+   
+   letter-spacing: 0.03em;
+}
+
+.button:hover ,
+.button:focus
+{
+   color: var(--background-titles-item);
+   background-color: var(--background-focus-button);
+}
+ .titles-item
+ {
+   background: var(--background-titles-item);
+   border: 1px solid #EEEEEE;
+ }
+
+ .titles-item .titles
+ {
+   
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 2;
+   /* identical to box height, or 200% */
+   
+   letter-spacing: 0.06em;
+   
+   color: var(--titles-color);
+ }
+
+
+ ul .titles-description
+ {
+  
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.88;
+/* identical to box height, or 188% */
+
+letter-spacing: 0.03em;
+ }
+
+
+
+
+ /* _____________________________________footer */
+
+ footer
+ {
+   background: var(--background-footer)
+ }
+
+ address
+ {
+   font-style: normal;
+ }
+
+ .logo-footer
+ {
+    color: var(--logo-footer);
+  
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+   
+    letter-spacing: 0.03em;
+ }
+
+ .map
+ {
+   color: var(--logo-footer);
+
+   
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.71;
+   /* or 171% */
+
+   letter-spacing: 0.03em;
+ }
+
+ .contacts-footer
+ {
+   
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.71;
+
+   letter-spacing: 0.03em;
+
+   color: rgba(255, 255, 255, 0.6);
+ }
+
+ .contacts-footer:hover,
+ .contacts-footer:focus,
+ .map:hover,
+ .map:focus
+ {
+   color: var(--background-focus-button);
+ } 
