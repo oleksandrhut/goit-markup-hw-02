@@ -3,16 +3,25 @@
     visibility: hidden;
 }
 
+ul
+{
+   list-style: none;
+}
+
+
 /*___________________________________________body*/
 
 body 
 {
     font-family: 'Roboto', sans-serif;  
+    color:#757575;
+    
 }
 
-[href]
+a
 {
    text-decoration: none;
+   color: inherit;
 }
 
 /* ___________________________________________Head */
@@ -22,7 +31,6 @@ body
   
     font-family: 'Raleway', sans-serif;
 
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -37,6 +45,7 @@ body
 
  .nav-menu
  {
+    color: #212121;
     
     font-style: normal;
     font-weight: 500;
@@ -44,3 +53,13 @@ body
     line-height: 1.14;
     letter-spacing: 0.02em;
  }
+
+ .nav-item:hover,
+ .nav-item:focus,
+ .contacts:hover,
+ .contacts:focus
+ {
+   color: #2196F3;
+ } 
+ 
+ 
